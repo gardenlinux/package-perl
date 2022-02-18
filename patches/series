@@ -1,0 +1,4 @@
+debian_control.patch
+debian_config_over.patch
+debian_cross_all_config_static.patch
+debian_rules.patch
