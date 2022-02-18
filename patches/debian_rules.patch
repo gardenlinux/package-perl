@@ -1,0 +1,17 @@
+Subject: Avoid build failures on powerful machines
+
++++ perl-5.34.0/debian/rules
+@@ -115,11 +115,11 @@
+ 	if [ "$*" = "shared" ]; then \
+ 	  ln -s libperl.so.$(fullversion) build-$*/libperl.so.$(version); \
+ 	  ln -s libperl.so.$(version) build-$*/libperl.so; \
+-	  dh_auto_build --builddirectory=build-$* -- SHRPLDFLAGS='$$(LDDLFLAGS) -Wl,-soname,libperl.so.$(version)'; \
++	  dh_auto_build --no-parallel --builddirectory=build-$* -- SHRPLDFLAGS='$$(LDDLFLAGS) -Wl,-soname,libperl.so.$(version)'; \
+ 	elif [ "$*" = "debug" ]; then \
+-	  dh_auto_build --builddirectory=build-$* -- perl; \
++	  dh_auto_build --no-parallel --builddirectory=build-$* -- perl; \
+ 	else \
+-	  dh_auto_build --builddirectory=build-$*; \
++	  dh_auto_build --no-parallel --builddirectory=build-$*; \
+ 	fi
+ 	touch $@

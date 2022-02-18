@@ -1,0 +1,14 @@
+Subject: Remove libdb
+
++++ perl-5.34.0/debian/control	
+@@ -6,9 +6,9 @@
+ Standards-Version: 3.9.8
+ Homepage: http://dev.perl.org/perl5/
+ Rules-Requires-Root: no
++Build-Conflicts: libdb-dev
+ Build-Depends: file,
+  cpio,
+- libdb-dev,
+  libgdbm-dev (>= 1.18-3),
+  libgdbm-compat-dev,
+  netbase <!nocheck>,

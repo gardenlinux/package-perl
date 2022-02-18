@@ -1,0 +1,16 @@
+Subject: Remove libdb
+
++++ perl-5.34.0/debian/config.over
+@@ -32,12 +32,6 @@
+     d_inc_version_list=define
+ fi
+ 
+-# we always want the Berkeley DB support
+-if [ "$i_db" != "$define" ]; then
+-    echo "debian/config.over: Berkeley DB support not enabled, aborting!" 1>&2
+-    exit 1
+-fi
+-
+ # force /usr/lib/<triplet> into $Config{libpth} if it's not there yet
+ # see #630399
+ multiarch_dir=/usr/lib/`dpkg-architecture -qDEB_HOST_MULTIARCH`
