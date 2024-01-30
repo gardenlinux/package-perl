@@ -1,13 +1,14 @@
-Subject: Remove libdb
-
-+++ perl-5.34.0/debian/control	
-@@ -6,9 +6,9 @@
+diff -Naur a/debian/control b/debian/control
+--- a/debian/control	2024-01-30 22:14:07.388590203 +0000
++++ b/debian/control	2024-01-30 22:14:45.667019104 +0000
+@@ -6,10 +6,10 @@
  Standards-Version: 3.9.8
  Homepage: http://dev.perl.org/perl5/
  Rules-Requires-Root: no
 +Build-Conflicts: libdb-dev
  Build-Depends: file,
   cpio,
+  libcrypt-dev,
 - libdb-dev,
   libgdbm-dev (>= 1.18-3),
   libgdbm-compat-dev,

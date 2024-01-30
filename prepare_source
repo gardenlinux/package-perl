@@ -1,0 +1,17 @@
+# perl debian source pkg has stupid multiple orig.tar shit => extra magic needed here
+(
+	tmp_dir="$(mktemp -d)"
+	trap 'cd / && rm -rf "$tmp_dir"' EXIT
+	cd "$tmp_dir"
+
+	apt-get source --only-source --download-only perl
+	mkdir _
+	auto_decompress *.orig.tar.* | tar --extract --strip-components 1 --directory _
+	mkdir _/regen-configure
+	auto_decompress *.orig-regen-configure.tar.* | tar --extract --strip-components 1 --directory _/regen-configure
+	tar --create _ | tee "$dir/orig.tar" | tar --extract --strip-components 1 --directory "$dir/src"
+	rm -rf _
+	auto_decompress *.debian.tar.* | tar --extract --directory "$dir/src"
+)
+
+apply_patches
