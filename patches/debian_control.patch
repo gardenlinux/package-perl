@@ -1,13 +1,14 @@
-diff -Naur a/debian/control b/debian/control
---- a/debian/control	2024-01-30 22:14:07.388590203 +0000
-+++ b/debian/control	2024-01-30 22:14:45.667019104 +0000
-@@ -6,10 +6,10 @@
+diff --color -Naur a/debian/control b/debian/control
+--- a/debian/control	2024-05-07 12:14:12.409629202 +0200
++++ b/debian/control	2024-05-07 12:15:44.809988686 +0200
+@@ -6,11 +6,11 @@
  Standards-Version: 3.9.8
  Homepage: http://dev.perl.org/perl5/
  Rules-Requires-Root: no
 +Build-Conflicts: libdb-dev
  Build-Depends: file,
   cpio,
+  dpkg-dev (>= 1.22.5),
   libcrypt-dev,
 - libdb-dev,
   libgdbm-dev (>= 1.18-3),
