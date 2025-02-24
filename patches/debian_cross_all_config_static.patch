@@ -1,8 +1,7 @@
-Subject: Remove DB_File from (dynamic) extensions for all architectures
-
---- a/debian/cross/alpha/config.sh.static
-+++ b/debian/cross/alpha/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/alpha/config.sh.static b/debian/cross/alpha/config.sh.static
+--- a/debian/cross/alpha/config.sh.static	2024-10-14 16:14:34.000000000 +0000
++++ b/debian/cross/alpha/config.sh.static	2025-02-24 19:12:34.367998084 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -11,7 +10,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -20,7 +19,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -29,9 +28,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='alpha-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/amd64/config.sh.static
-+++ b/debian/cross/amd64/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/amd64/config.sh.static b/debian/cross/amd64/config.sh.static
+--- a/debian/cross/amd64/config.sh.static	2025-02-16 14:42:29.000000000 +0000
++++ b/debian/cross/amd64/config.sh.static	2025-02-24 19:12:34.368998069 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -40,7 +40,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -49,7 +49,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -58,9 +58,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='x86_64-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/arm64/config.sh.static
-+++ b/debian/cross/arm64/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/arm64/config.sh.static b/debian/cross/arm64/config.sh.static
+--- a/debian/cross/arm64/config.sh.static	2025-02-16 14:42:30.000000000 +0000
++++ b/debian/cross/arm64/config.sh.static	2025-02-24 19:12:34.370998039 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -69,7 +70,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -78,7 +79,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -87,9 +88,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='aarch64-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/armel/config.sh.static
-+++ b/debian/cross/armel/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/armel/config.sh.static b/debian/cross/armel/config.sh.static
+--- a/debian/cross/armel/config.sh.static	2025-02-16 14:42:30.000000000 +0000
++++ b/debian/cross/armel/config.sh.static	2025-02-24 19:12:34.372998009 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -98,7 +100,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -107,7 +109,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -116,9 +118,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='arm-linux-gnueabi-gcc'
  ld_can_script='define'
---- a/debian/cross/armhf/config.sh.static
-+++ b/debian/cross/armhf/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/armhf/config.sh.static b/debian/cross/armhf/config.sh.static
+--- a/debian/cross/armhf/config.sh.static	2025-02-16 14:42:31.000000000 +0000
++++ b/debian/cross/armhf/config.sh.static	2025-02-24 19:12:34.373997994 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -127,7 +130,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -136,7 +139,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -145,9 +148,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='arm-linux-gnueabihf-gcc'
  ld_can_script='define'
---- a/debian/cross/hppa/config.sh.static
-+++ b/debian/cross/hppa/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/hppa/config.sh.static b/debian/cross/hppa/config.sh.static
+--- a/debian/cross/hppa/config.sh.static	2025-02-16 14:42:32.000000000 +0000
++++ b/debian/cross/hppa/config.sh.static	2025-02-24 19:12:34.374997979 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -156,7 +160,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -165,7 +169,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -174,38 +178,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='hppa-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/hurd-amd64/config.sh.static
-+++ b/debian/cross/hurd-amd64/config.sh.static
-@@ -715,7 +715,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
- dtrace=''
- dtraceobject=''
- dtracexnolibs=''
--dynamic_ext='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd DB_File Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared'
-+dynamic_ext='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared'
- eagain='EAGAIN'
- ebcdic='undef'
- echo='echo'
-@@ -730,7 +730,7 @@ endservent_r_proto='0'
- eunicefix=':'
- exe_ext=''
- expr='expr'
--extensions='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd DB_File Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared Archive/Tar Attribute/Handlers AutoLoader CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Config/Perl/V Devel/SelfStubber Digest Dumpvalue Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS File/Fetch File/Find File/Path File/Temp FileCache Filter/Simple FindBin Getopt/Long HTTP/Tiny I18N/Collate I18N/LangTags IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 JSON/PP Locale/Maketext Locale/Maketext/Simple Math/BigInt Math/BigRat Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NEXT Net/Ping Params/Check Perl/OSType PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage Safe Search/Dict SelfLoader Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Test Test/Harness Test/Simple Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/Local XSLoader autodie autouse base bignum constant encoding/warnings experimental if lib libnet parent perlfaq podlators version'
-+extensions='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared Archive/Tar Attribute/Handlers AutoLoader CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Config/Perl/V Devel/SelfStubber Digest Dumpvalue Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS File/Fetch File/Find File/Path File/Temp FileCache Filter/Simple FindBin Getopt/Long HTTP/Tiny I18N/Collate I18N/LangTags IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 JSON/PP Locale/Maketext Locale/Maketext/Simple Math/BigInt Math/BigRat Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NEXT Net/Ping Params/Check Perl/OSType PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage Safe Search/Dict SelfLoader Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Test Test/Harness Test/Simple Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/Local XSLoader autodie autouse base bignum constant encoding/warnings experimental if lib libnet parent perlfaq podlators version'
- extern_C='extern'
- extras=''
- fflushNULL='define'
-@@ -922,7 +922,7 @@ issymlink='test -h'
- ivdformat='"ld"'
- ivsize='8'
- ivtype='long'
--known_extensions='Amiga/ARexx Amiga/Exec Archive/Tar Attribute/Handlers AutoLoader B CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Compress/Raw/Bzip2 Compress/Raw/Zlib Config/Perl/V Cwd DB_File Data/Dumper Devel/PPPort Devel/Peek Devel/SelfStubber Digest Digest/MD5 Digest/SHA Dumpvalue Encode Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS Fcntl File/DosGlob File/Fetch File/Find File/Glob File/Path File/Temp FileCache Filter/Simple Filter/Util/Call FindBin GDBM_File Getopt/Long HTTP/Tiny Hash/Util Hash/Util/FieldHash I18N/Collate I18N/LangTags I18N/Langinfo IO IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 IPC/SysV JSON/PP List/Util Locale/Maketext Locale/Maketext/Simple MIME/Base64 Math/BigInt Math/BigInt/FastCalc Math/BigRat Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NDBM_File NEXT Net/Ping ODBM_File Opcode POSIX Params/Check Perl/OSType PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage SDBM_File Safe Search/Dict SelfLoader Socket Storable Sys/Hostname Sys/Syslog Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Test Test/Harness Test/Simple Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/HiRes Time/Local Time/Piece Unicode/Collate Unicode/Normalize VMS/DCLsym VMS/Filespec VMS/Stdio Win32 Win32API/File Win32CORE XS/APItest XS/Typemap XSLoader attributes autodie autouse base bignum constant encoding/warnings experimental if lib libnet mro parent perlfaq podlators re threads threads/shared version '
-+known_extensions='Amiga/ARexx Amiga/Exec Archive/Tar Attribute/Handlers AutoLoader B CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Compress/Raw/Bzip2 Compress/Raw/Zlib Config/Perl/V Cwd Data/Dumper Devel/PPPort Devel/Peek Devel/SelfStubber Digest Digest/MD5 Digest/SHA Dumpvalue Encode Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS Fcntl File/DosGlob File/Fetch File/Find File/Glob File/Path File/Temp FileCache Filter/Simple Filter/Util/Call FindBin GDBM_File Getopt/Long HTTP/Tiny Hash/Util Hash/Util/FieldHash I18N/Collate I18N/LangTags I18N/Langinfo IO IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 IPC/SysV JSON/PP List/Util Locale/Maketext Locale/Maketext/Simple MIME/Base64 Math/BigInt Math/BigInt/FastCalc Math/BigRat Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NDBM_File NEXT Net/Ping ODBM_File Opcode POSIX Params/Check Perl/OSType PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage SDBM_File Safe Search/Dict SelfLoader Socket Storable Sys/Hostname Sys/Syslog Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Test Test/Harness Test/Simple Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/HiRes Time/Local Time/Piece Unicode/Collate Unicode/Normalize VMS/DCLsym VMS/Filespec VMS/Stdio Win32 Win32API/File Win32CORE XS/APItest XS/Typemap XSLoader attributes autodie autouse base bignum constant encoding/warnings experimental if lib libnet mro parent perlfaq podlators re threads threads/shared version '
- ksh=''
- ld='x86_64-gnu-gcc'
- ld_can_script='define'
---- a/debian/cross/hurd-i386/config.sh.static
-+++ b/debian/cross/hurd-i386/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/hurd-amd64/config.sh.static b/debian/cross/hurd-amd64/config.sh.static
+--- a/debian/cross/hurd-amd64/config.sh.static	2025-02-16 14:42:32.000000000 +0000
++++ b/debian/cross/hurd-amd64/config.sh.static	2025-02-24 19:12:34.376997948 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -214,7 +190,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -223,7 +199,37 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
+ ivdformat='"ld"'
+ ivsize='8'
+ ivtype='long'
+-known_extensions='Amiga/ARexx Amiga/Exec Archive/Tar Attribute/Handlers AutoLoader B CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Compress/Raw/Bzip2 Compress/Raw/Zlib Config/Perl/V Cwd DB_File Data/Dumper Devel/PPPort Devel/Peek Devel/SelfStubber Digest Digest/MD5 Digest/SHA Dumpvalue Encode Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS Fcntl File/DosGlob File/Fetch File/Find File/Glob File/Path File/Temp FileCache Filter/Simple Filter/Util/Call FindBin GDBM_File Getopt/Long HTTP/Tiny Hash/Util Hash/Util/FieldHash I18N/Collate I18N/LangTags I18N/Langinfo IO IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 IPC/SysV JSON/PP List/Util Locale/Maketext Locale/Maketext/Simple MIME/Base64 Math/BigInt Math/BigInt/FastCalc Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NDBM_File NEXT Net/Ping ODBM_File Opcode POSIX Params/Check Perl/OSType PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage SDBM_File Safe Search/Dict SelfLoader Socket Storable Sys/Hostname Sys/Syslog Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Term/Table Test Test/Harness Test/Simple Test2/Suite Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/HiRes Time/Local Time/Piece Unicode/Collate Unicode/Normalize VMS/DCLsym VMS/Filespec VMS/Stdio Win32 Win32API/File Win32CORE XS/APItest XS/Typemap XSLoader attributes autodie autouse base bignum constant encoding/warnings experimental if lib libnet mro parent perlfaq podlators re threads threads/shared version '
++known_extensions='Amiga/ARexx Amiga/Exec Archive/Tar Attribute/Handlers AutoLoader B CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Compress/Raw/Bzip2 Compress/Raw/Zlib Config/Perl/V Cwd Data/Dumper Devel/PPPort Devel/Peek Devel/SelfStubber Digest Digest/MD5 Digest/SHA Dumpvalue Encode Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS Fcntl File/DosGlob File/Fetch File/Find File/Glob File/Path File/Temp FileCache Filter/Simple Filter/Util/Call FindBin GDBM_File Getopt/Long HTTP/Tiny Hash/Util Hash/Util/FieldHash I18N/Collate I18N/LangTags I18N/Langinfo IO IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 IPC/SysV JSON/PP List/Util Locale/Maketext Locale/Maketext/Simple MIME/Base64 Math/BigInt Math/BigInt/FastCalc Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NDBM_File NEXT Net/Ping ODBM_File Opcode POSIX Params/Check Perl/OSType PerlIO/encoding PerlIO/mmap PerlIO/scalar PerlIO/via PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage SDBM_File Safe Search/Dict SelfLoader Socket Storable Sys/Hostname Sys/Syslog Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Term/Table Test Test/Harness Test/Simple Test2/Suite Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/HiRes Time/Local Time/Piece Unicode/Collate Unicode/Normalize VMS/DCLsym VMS/Filespec VMS/Stdio Win32 Win32API/File Win32CORE XS/APItest XS/Typemap XSLoader attributes autodie autouse base bignum constant encoding/warnings experimental if lib libnet mro parent perlfaq podlators re threads threads/shared version '
+ ksh=''
+ ld='x86_64-gnu-gcc'
+ ld_can_script='define'
+diff -Naur a/debian/cross/hurd-i386/config.sh.static b/debian/cross/hurd-i386/config.sh.static
+--- a/debian/cross/hurd-i386/config.sh.static	2025-02-16 14:42:33.000000000 +0000
++++ b/debian/cross/hurd-i386/config.sh.static	2025-02-24 19:12:34.377997933 +0000
+@@ -721,7 +721,7 @@
+ dtrace=''
+ dtraceobject=''
+ dtracexnolibs=''
+-dynamic_ext='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd DB_File Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared'
++dynamic_ext='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared'
+ eagain='EAGAIN'
+ ebcdic='undef'
+ echo='echo'
+@@ -736,7 +736,7 @@
+ eunicefix=':'
+ exe_ext=''
+ expr='expr'
+-extensions='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd DB_File Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared Archive/Tar Attribute/Handlers AutoLoader CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Config/Perl/V Devel/SelfStubber Digest Dumpvalue Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS File/Fetch File/Find File/Path File/Temp FileCache Filter/Simple FindBin Getopt/Long HTTP/Tiny I18N/Collate I18N/LangTags IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 JSON/PP Locale/Maketext Locale/Maketext/Simple Math/BigInt Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NEXT Net/Ping Params/Check Perl/OSType PerlIO/scalar PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage Safe Search/Dict SelfLoader Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Term/Table Test Test/Harness Test/Simple Test2/Suite Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/Local XSLoader autodie autouse base bignum constant encoding/warnings experimental if lib libnet parent perlfaq podlators version'
++extensions='B Compress/Raw/Bzip2 Compress/Raw/Zlib Cwd Data/Dumper Devel/PPPort Devel/Peek Digest/MD5 Digest/SHA Encode Fcntl File/DosGlob File/Glob Filter/Util/Call GDBM_File Hash/Util Hash/Util/FieldHash I18N/Langinfo IO List/Util MIME/Base64 Math/BigInt/FastCalc NDBM_File ODBM_File Opcode POSIX PerlIO/encoding PerlIO/mmap PerlIO/via SDBM_File Socket Storable Sys/Hostname Sys/Syslog Time/HiRes Time/Piece Unicode/Collate Unicode/Normalize XS/APItest XS/Typemap attributes mro re threads threads/shared Archive/Tar Attribute/Handlers AutoLoader CPAN CPAN/Meta CPAN/Meta/Requirements CPAN/Meta/YAML Carp Config/Perl/V Devel/SelfStubber Digest Dumpvalue Env Errno Exporter ExtUtils/CBuilder ExtUtils/Constant ExtUtils/Install ExtUtils/MakeMaker ExtUtils/Manifest ExtUtils/Miniperl ExtUtils/PL2Bat ExtUtils/ParseXS File/Fetch File/Find File/Path File/Temp FileCache Filter/Simple FindBin Getopt/Long HTTP/Tiny I18N/Collate I18N/LangTags IO/Compress IO/Socket/IP IO/Zlib IPC/Cmd IPC/Open3 JSON/PP Locale/Maketext Locale/Maketext/Simple Math/BigInt Math/Complex Memoize Module/CoreList Module/Load Module/Load/Conditional Module/Loaded Module/Metadata NEXT Net/Ping Params/Check Perl/OSType PerlIO/scalar PerlIO/via/QuotedPrint Pod/Checker Pod/Escapes Pod/Functions Pod/Html Pod/Perldoc Pod/Simple Pod/Usage Safe Search/Dict SelfLoader Term/ANSIColor Term/Cap Term/Complete Term/ReadLine Term/Table Test Test/Harness Test/Simple Test2/Suite Text/Abbrev Text/Balanced Text/ParseWords Text/Tabs Thread/Queue Thread/Semaphore Tie/File Tie/Hash/NamedCapture Tie/Memoize Tie/RefHash Time/Local XSLoader autodie autouse base bignum constant encoding/warnings experimental if lib libnet parent perlfaq podlators version'
+ extern_C='extern'
+ extras=''
+ fflushNULL='define'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -232,9 +238,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='i686-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/i386/config.sh.static
-+++ b/debian/cross/i386/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/i386/config.sh.static b/debian/cross/i386/config.sh.static
+--- a/debian/cross/i386/config.sh.static	2025-02-16 14:42:33.000000000 +0000
++++ b/debian/cross/i386/config.sh.static	2025-02-24 19:12:34.378997918 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -243,7 +250,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -252,7 +259,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -261,9 +268,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='i686-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/ia64/config.sh.static
-+++ b/debian/cross/ia64/config.sh.static
-@@ -719,7 +719,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/ia64/config.sh.static b/debian/cross/ia64/config.sh.static
+--- a/debian/cross/ia64/config.sh.static	2024-10-01 20:10:23.000000000 +0000
++++ b/debian/cross/ia64/config.sh.static	2025-02-24 19:12:34.379997903 +0000
+@@ -719,7 +719,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -272,7 +280,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -734,7 +734,7 @@ endservent_r_proto='0'
+@@ -734,7 +734,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -281,7 +289,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -928,7 +928,7 @@ issymlink='test -h'
+@@ -928,7 +928,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -290,9 +298,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='ia64-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/kfreebsd-amd64/config.sh.static
-+++ b/debian/cross/kfreebsd-amd64/config.sh.static
-@@ -709,7 +709,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/kfreebsd-amd64/config.sh.static b/debian/cross/kfreebsd-amd64/config.sh.static
+--- a/debian/cross/kfreebsd-amd64/config.sh.static	2024-10-01 20:10:23.000000000 +0000
++++ b/debian/cross/kfreebsd-amd64/config.sh.static	2025-02-24 19:12:34.380997888 +0000
+@@ -709,7 +709,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -301,7 +310,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -724,7 +724,7 @@ endservent_r_proto='0'
+@@ -724,7 +724,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -310,7 +319,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -916,7 +916,7 @@ issymlink='test -h'
+@@ -916,7 +916,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -319,9 +328,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='x86_64-kfreebsd-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/kfreebsd-i386/config.sh.static
-+++ b/debian/cross/kfreebsd-i386/config.sh.static
-@@ -709,7 +709,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/kfreebsd-i386/config.sh.static b/debian/cross/kfreebsd-i386/config.sh.static
+--- a/debian/cross/kfreebsd-i386/config.sh.static	2024-10-01 20:10:23.000000000 +0000
++++ b/debian/cross/kfreebsd-i386/config.sh.static	2025-02-24 19:12:34.382997858 +0000
+@@ -709,7 +709,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -330,7 +340,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -724,7 +724,7 @@ endservent_r_proto='0'
+@@ -724,7 +724,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -339,7 +349,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -916,7 +916,7 @@ issymlink='test -h'
+@@ -916,7 +916,7 @@
  ivdformat='"Ld"'
  ivsize='8'
  ivtype='long long'
@@ -348,9 +358,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='i686-kfreebsd-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/loong64/config.sh.static
-+++ b/debian/cross/loong64/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/loong64/config.sh.static b/debian/cross/loong64/config.sh.static
+--- a/debian/cross/loong64/config.sh.static	2025-02-16 14:42:34.000000000 +0000
++++ b/debian/cross/loong64/config.sh.static	2025-02-24 19:12:34.383997843 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -359,7 +370,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -368,7 +379,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -377,9 +388,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='loongarch64-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/m68k/config.sh.static
-+++ b/debian/cross/m68k/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/m68k/config.sh.static b/debian/cross/m68k/config.sh.static
+--- a/debian/cross/m68k/config.sh.static	2025-02-16 14:42:35.000000000 +0000
++++ b/debian/cross/m68k/config.sh.static	2025-02-24 19:12:34.385997812 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -388,7 +400,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -397,7 +409,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -406,9 +418,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='m68k-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/mips/config.sh.static
-+++ b/debian/cross/mips/config.sh.static
-@@ -704,7 +704,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/mips/config.sh.static b/debian/cross/mips/config.sh.static
+--- a/debian/cross/mips/config.sh.static	2024-10-01 20:10:23.000000000 +0000
++++ b/debian/cross/mips/config.sh.static	2025-02-24 19:12:34.386997797 +0000
+@@ -704,7 +704,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -417,7 +430,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -719,7 +719,7 @@ endservent_r_proto='0'
+@@ -719,7 +719,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -426,7 +439,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -911,7 +911,7 @@ issymlink='test -h'
+@@ -911,7 +911,7 @@
  ivdformat='"Ld"'
  ivsize='8'
  ivtype='long long'
@@ -435,9 +448,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='mips-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/mips64el/config.sh.static
-+++ b/debian/cross/mips64el/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/mips64el/config.sh.static b/debian/cross/mips64el/config.sh.static
+--- a/debian/cross/mips64el/config.sh.static	2025-02-16 14:42:35.000000000 +0000
++++ b/debian/cross/mips64el/config.sh.static	2025-02-24 19:12:34.387997782 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -446,7 +460,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -455,7 +469,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -464,9 +478,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='mips64el-linux-gnuabi64-gcc'
  ld_can_script='define'
---- a/debian/cross/mipsel/config.sh.static
-+++ b/debian/cross/mipsel/config.sh.static
-@@ -715,7 +715,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/mipsel/config.sh.static b/debian/cross/mipsel/config.sh.static
+--- a/debian/cross/mipsel/config.sh.static	2024-10-01 20:10:23.000000000 +0000
++++ b/debian/cross/mipsel/config.sh.static	2025-02-24 19:12:34.388997767 +0000
+@@ -715,7 +715,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -475,7 +490,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -730,7 +730,7 @@ endservent_r_proto='0'
+@@ -730,7 +730,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -484,7 +499,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -922,7 +922,7 @@ issymlink='test -h'
+@@ -922,7 +922,7 @@
  ivdformat='"Ld"'
  ivsize='8'
  ivtype='long long'
@@ -493,9 +508,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='mipsel-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/powerpc/config.sh.static
-+++ b/debian/cross/powerpc/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/powerpc/config.sh.static b/debian/cross/powerpc/config.sh.static
+--- a/debian/cross/powerpc/config.sh.static	2025-02-16 14:42:36.000000000 +0000
++++ b/debian/cross/powerpc/config.sh.static	2025-02-24 19:12:34.389997752 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -504,7 +520,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -513,7 +529,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -522,9 +538,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='powerpc-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/powerpcspe/config.sh.static
-+++ b/debian/cross/powerpcspe/config.sh.static
-@@ -700,7 +700,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/powerpcspe/config.sh.static b/debian/cross/powerpcspe/config.sh.static
+--- a/debian/cross/powerpcspe/config.sh.static	2024-10-01 20:10:23.000000000 +0000
++++ b/debian/cross/powerpcspe/config.sh.static	2025-02-24 19:12:34.391997722 +0000
+@@ -700,7 +700,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -533,7 +550,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -715,7 +715,7 @@ endservent_r_proto='0'
+@@ -715,7 +715,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -542,7 +559,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -906,7 +906,7 @@ issymlink='test -h'
+@@ -906,7 +906,7 @@
  ivdformat='"Ld"'
  ivsize='8'
  ivtype='long long'
@@ -551,9 +568,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='powerpc-linux-gnuspe-gcc'
  ld_can_script='define'
---- a/debian/cross/ppc64/config.sh.static
-+++ b/debian/cross/ppc64/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/ppc64/config.sh.static b/debian/cross/ppc64/config.sh.static
+--- a/debian/cross/ppc64/config.sh.static	2025-02-16 14:42:36.000000000 +0000
++++ b/debian/cross/ppc64/config.sh.static	2025-02-24 19:12:34.393997691 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -562,7 +580,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -571,7 +589,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -580,9 +598,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='powerpc64-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/ppc64el/config.sh.static
-+++ b/debian/cross/ppc64el/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/ppc64el/config.sh.static b/debian/cross/ppc64el/config.sh.static
+--- a/debian/cross/ppc64el/config.sh.static	2025-02-16 14:42:37.000000000 +0000
++++ b/debian/cross/ppc64el/config.sh.static	2025-02-24 19:12:34.397997631 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -591,7 +610,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -600,7 +619,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -609,9 +628,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='powerpc64le-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/riscv64/config.sh.static
-+++ b/debian/cross/riscv64/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/riscv64/config.sh.static b/debian/cross/riscv64/config.sh.static
+--- a/debian/cross/riscv64/config.sh.static	2025-02-16 14:42:37.000000000 +0000
++++ b/debian/cross/riscv64/config.sh.static	2025-02-24 19:12:34.398997616 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -620,7 +640,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -629,7 +649,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -638,9 +658,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='riscv64-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/s390x/config.sh.static
-+++ b/debian/cross/s390x/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/s390x/config.sh.static b/debian/cross/s390x/config.sh.static
+--- a/debian/cross/s390x/config.sh.static	2025-02-16 14:42:38.000000000 +0000
++++ b/debian/cross/s390x/config.sh.static	2025-02-24 19:12:34.400997586 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -649,7 +670,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -658,7 +679,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -667,9 +688,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='s390x-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/sh4/config.sh.static
-+++ b/debian/cross/sh4/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/sh4/config.sh.static b/debian/cross/sh4/config.sh.static
+--- a/debian/cross/sh4/config.sh.static	2024-10-14 16:14:35.000000000 +0000
++++ b/debian/cross/sh4/config.sh.static	2025-02-24 19:12:34.401997571 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -678,7 +700,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -687,7 +709,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
@@ -696,9 +718,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='sh4-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/sparc64/config.sh.static
-+++ b/debian/cross/sparc64/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/sparc64/config.sh.static b/debian/cross/sparc64/config.sh.static
+--- a/debian/cross/sparc64/config.sh.static	2025-02-16 14:42:39.000000000 +0000
++++ b/debian/cross/sparc64/config.sh.static	2025-02-24 19:12:34.402997555 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -707,7 +730,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -716,7 +739,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"ld"'
  ivsize='8'
  ivtype='long'
@@ -725,9 +748,10 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  ksh=''
  ld='sparc64-linux-gnu-gcc'
  ld_can_script='define'
---- a/debian/cross/x32/config.sh.static
-+++ b/debian/cross/x32/config.sh.static
-@@ -721,7 +721,7 @@ drand48_r_proto='REENTRANT_PROTO_I_ST'
+diff -Naur a/debian/cross/x32/config.sh.static b/debian/cross/x32/config.sh.static
+--- a/debian/cross/x32/config.sh.static	2025-02-16 14:42:39.000000000 +0000
++++ b/debian/cross/x32/config.sh.static	2025-02-24 19:12:34.403997540 +0000
+@@ -721,7 +721,7 @@
  dtrace=''
  dtraceobject=''
  dtracexnolibs=''
@@ -736,7 +760,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  eagain='EAGAIN'
  ebcdic='undef'
  echo='echo'
-@@ -736,7 +736,7 @@ endservent_r_proto='0'
+@@ -736,7 +736,7 @@
  eunicefix=':'
  exe_ext=''
  expr='expr'
@@ -745,7 +769,7 @@ Subject: Remove DB_File from (dynamic) extensions for all architectures
  extern_C='extern'
  extras=''
  fflushNULL='define'
-@@ -930,7 +930,7 @@ issymlink='test -h'
+@@ -930,7 +930,7 @@
  ivdformat='"lld"'
  ivsize='8'
  ivtype='long long'
