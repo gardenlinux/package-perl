@@ -18,7 +18,7 @@
 	salsa_dir="$(mktemp -d)"
 	trap 'rm -rf "$salsa_dir"' EXIT
 
-	git clone --depth 1 --branch debian/5.40.1-7 https://salsa.debian.org/perl-team/interpreter/perl.git "$salsa_dir"
+	git clone --depth 1 --branch debian/5.40.1-8 https://salsa.debian.org/perl-team/interpreter/perl.git "$salsa_dir"
 	rm -rf "$dir/src/debian"
 	mv "$salsa_dir/debian" "$dir/src/"
 )
