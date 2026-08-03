@@ -1,7 +1,7 @@
 Subject: Avoid build failures on powerful machines
 
-+++ perl-5.34.0/debian/rules
-@@ -115,11 +115,11 @@
++++ perl-5.42.2/debian/rules
+@@ -122,11 +122,11 @@
  	if [ "$*" = "shared" ]; then \
  	  ln -s libperl.so.$(fullversion) build-$*/libperl.so.$(version); \
  	  ln -s libperl.so.$(version) build-$*/libperl.so; \
