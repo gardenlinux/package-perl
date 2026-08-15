@@ -1,10 +1,11 @@
-Subject: Remove libdb
-
-+++ perl-5.34.0/debian/config.over
-@@ -32,12 +32,6 @@
+diff --git a/debian/config.over b/debian/config.over
+index 565465c88..5c9ad16c1 100644
+--- a/debian/config.over
++++ b/debian/config.over
+@@ -32,12 +32,6 @@ if [ -n "$inc_version_list" ]; then
      d_inc_version_list=define
  fi
- 
+
 -# we always want the Berkeley DB support
 -if [ "$i_db" != "$define" ]; then
 -    echo "debian/config.over: Berkeley DB support not enabled, aborting!" 1>&2

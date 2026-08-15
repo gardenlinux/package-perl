@@ -1,27 +1,18 @@
-# perl debian source pkg has stupid multiple orig.tar shit => extra magic needed here
-(
-	tmp_dir="$(mktemp -d)"
-	trap 'cd / && rm -rf "$tmp_dir"' EXIT
-	cd "$tmp_dir"
+pkg=perl
+debian_version=5.42.2-3
 
-	apt-get source --only-source --download-only perl
-	mkdir _
-	auto_decompress *.orig.tar.* | tar --extract --no-same-owner --strip-components 1 --directory _
-	mkdir _/regen-configure
-	auto_decompress *.orig-regen-configure.tar.* | tar --extract --no-same-owner --strip-components 1 --directory _/regen-configure
-	tar --create _ | tee "$dir/orig.tar" | tar --extract --strip-components 1 --directory "$dir/src"
-	rm -rf _
-	auto_decompress *.debian.tar.* | tar --extract --directory "$dir/src"
-)
+version_orig=5.40.1-7
+version=${version_orig}+really${debian_version}
+version_suffix=gl0~bp2150
 
-(
-	salsa_dir="$(mktemp -d)"
-	trap 'rm -rf "$salsa_dir"' EXIT
+git_src -b "debian/$debian_version" "https://salsa.debian.org/perl-team/interpreter/perl.git"
 
-	git clone --depth 1 --branch debian/5.40.1-7 https://salsa.debian.org/perl-team/interpreter/perl.git "$salsa_dir"
-	rm -rf "$dir/src/debian"
-	mv "$salsa_dir/debian" "$dir/src/"
-)
+# Flush changelog because we "downgrade" and recreate it
+unlink $dir/src/debian/changelog
+
+# The patches are already applied on salsa
+rm -fR $dir/src/debian/patches/*
+# Reapply patches here if needed, series is required for debian/rules
+touch $dir/src/debian/patches/series
 
 apply_patches
-version_suffix=gl0~bp2150
