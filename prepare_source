@@ -3,7 +3,7 @@ debian_version=5.42.2-3
 
 version_orig=5.40.1-7
 version=${version_orig}+really${debian_version}
-version_suffix=gl1~bp2150
+version_suffix=gl2~bp2150
 
 git_src -b "debian/$debian_version" "https://salsa.debian.org/perl-team/interpreter/perl.git"
 
